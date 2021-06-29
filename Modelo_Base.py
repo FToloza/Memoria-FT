@@ -114,11 +114,6 @@ def main (texto):
     CFm=vaux[16]
 
 
-    #print(alpha1)
-
-    
-    #imprimir(Tspk)
-
     tiempo_inicial,tiempo_final=modelo(sitios,prepilas,pilas,Krecogida,m,alpha1,alpha2,alpha3,alpha4,alpha5,alpha6,alpha7,cap,captri,CFk,CFex,CFm,Cants,Cp,Cr,Tsrk,Tspk,Trpk,Tpq,Npq)
 
     
