@@ -235,7 +235,7 @@ def modelo(sitios,prepilas,pilas,Krecogida,m,alpha1,alpha2,alpha3,alpha4,alpha5,
     modelo += (lpSum(TEp[p] for p in Npilas) <= TE)
 
     #restriccion 17
-    modelo += (lpSum(Tspk[(s,p)] * Xsp[(s,p,k)] for s in Nsitios for p in Npilas ) + lpSum(Tsrk[(s,r)] *Xsr[(s,r,k)] for s in Nsitios for r in Nprepilas) + lpSum(Trpk[(r,p)] * Vrp[(r,p,k)] for r in Nprepilas for p in Npilas) <= TRk[k] )
+    modelo += (lpSum(Tspk[(s,p)] * Xsp[(s,p,k)] for s in Nsitios for p in Npilas ) + lpSum(Tsrk[(s,r)] *Xsr[(s,r,k)] for s in Nsitios for r in Nprepilas) + lpSum(Trpk[(r,p)] * Vrp[(r,p,k)] for r in Nprepilas for p in Npilas) == TRk[k] )
 
 
  
