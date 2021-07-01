@@ -212,7 +212,7 @@ def modelo(sitios,prepilas,pilas,Krecogida,m,alpha1,alpha2,alpha3,alpha4,alpha5,
         modelo +=(lpSum(Cants[s] * Xsp[(s,p)] for s in Nsitios  ) + lpSum(Erp[(r,p)] for r in Nprepilas ) == Vp[p])
 
     #restriccion 12
-    modelo += (lpSum(Tspk[(s,p)] * Xsp[(s,p)] for s in Nsitios for p in Npilas ) + lpSum(Tsrk[(s,r)] *Xsr[(s,r)] for s in Nsitios for r in Nprepilas) + lpSum(Trpk[(r,p)] * Vrp[(r,p)] for r in Nprepilas for p in Npilas) <= TR )
+    modelo += (lpSum(Tspk[(s,p)] * Xsp[(s,p)] for s in Nsitios for p in Npilas ) + lpSum(Tsrk[(s,r)] *Xsr[(s,r)] for s in Nsitios for r in Nprepilas) + lpSum(Trpk[(r,p)] * Vrp[(r,p)] for r in Nprepilas for p in Npilas) == TR )
  
     for p in Npilas2: #restriccion 13
         modelo +=(lpSum(Zpq[(q,p)] for q in Npilas if q != p) == P[p])
