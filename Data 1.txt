@@ -1,0 +1,84 @@
+sitios=10;       // Número de sitios con biomasa
+prepilas=3;      // Número de potenciales prepilas
+pilas=5;         // Número de potenciales pilas
+Krecogida=1;     // Tipos de máquina de recogidas, según sus capacidades volumétricas y velocidades
+m=1;             // Número de máquinas trituradoras
+alpha1=10000;    // Constante
+alpha2=10000;    // Constante
+alpha3=1000;     // Constante
+alpha4=1000000;  // Constante
+alpha5=11500;    // Constante
+alpha6=10000;    // Constante
+alpha7=22000;    // Constante
+cap=3;         // Capacidad volumétrica de las máquinas recolectoras
+captri=100;      // Capacidad de procesamiento de la trituradora
+CFk=25000;     // Costos fijos máquinas de recogida
+CFex=45000;      // Costo fijo máquina excavadora
+CFm=170000;      // Costo fijo máquina trituradora
+hs=[
+348
+348
+348
+408
+408
+408
+490
+490
+490
+490
+];
+f=[
+0
+75000
+75000
+75000
+75000
+];
+g=[
+15000
+15000
+15000
+];
+Tsrk=[
+2.3	999	999
+3.0	999	999
+2.6	999	999
+999	3.5	999
+999	1.6	999
+999	4.6	999
+999	999	4.3
+999	999	5.6
+999	999	4.9
+999	999	4.3
+];
+Tspk=[
+999	9.3	7.2	999	999
+999	9.5	11.6	999	999
+999	5.3	11.1	999	999
+999	10.9	5.2	3.8	999
+999	7.1	8.7	6.3	999
+999	3.3	12.5	8.2	999
+999	5.2	999	7.8	10.1
+999	5.9	999	16.4	12.1
+999	10.1	999	16.4	7.2
+999	9.5	999	9.8	5.2
+];
+Trpk=[
+99	0.033	0.039	99	99
+99	0.027	0.030	0.018	99
+99	0.019	99	0.036	99
+];
+Tpq=[
+0	0.02	0.26	0.15	0.16
+0.02	0	0.24	0.13	0.29
+0.26	0.24	0	0.11	0.27
+0.15	0.13	0.11	0	0.15
+0.16	0.29	0.27	0.15	0
+];
+Npq=[
+0	0	0	0	308000
+0	0	0	0	0
+0	0	0	0	0
+0	0	0	0	0
+308000	0	0	0	0
+];
